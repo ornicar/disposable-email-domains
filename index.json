@@ -666,6 +666,7 @@
   "mailbidon.com",
   "mailblocks.com",
   "mailbox92.com",
+  "mailbox\\d+.biz",
   "mailbucket.org",
   "mailcat.biz",
   "mailcatch.*",
