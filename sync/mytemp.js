@@ -41,7 +41,7 @@ function append(domain, coll) {
 function run() {
   fetchDomain(function(domain) {
     addDomain(domain);
-    setTimeout(run, 10 * 1000);
+    setTimeout(run, 20 * 1000);
   }, function(err, data) {
     console.log(err, data);
     console.log('Waiting a while.');
