@@ -3,13 +3,13 @@ var fs = require('fs');
 
 var file = '../index.json'
 
-function fetchDomain(callback) {
+function fetchDomain(success, error) {
   HttpClient.get({
     url: 'https://api.mytemp.email/1/inbox/create?sid=8276038&task=4&tt=6',
     json: true
   }, function(err, res, data) {
-    if (data.inbox) callback(data.inbox.replace(/.+\@(.+)$/, '$1'));
-    else console.log(err, data);
+    if (data.inbox) success(data.inbox.replace(/.+\@(.+)$/, '$1'));
+    else error(err, data);
   });
 }
 
@@ -38,6 +38,14 @@ function append(domain, coll) {
   });
 }
 
-setInterval(function() {
-  fetchDomain(addDomain);
-}, 10 * 1000);
+function run() {
+  fetchDomain(function(domain) {
+    addDomain(domain);
+    setTimeout(run, 10 * 1000);
+  }, function(err, data) {
+    console.log(err, data);
+    console.log('Waiting a while.');
+    setTimeout(run, 100 * 1000);
+  });
+}
+run();
