@@ -1,14 +1,21 @@
 var HttpClient = require('request');
+var cheerio = require('cheerio')
 var storage = require('./storage');
 var util = require('./util');
 
+// <p class="crazy-mail" id="email_addr">2bcut@msgos.com</p>
 function fetchDomain(success, error) {
   HttpClient.get({
-    url: 'https://api.mytemp.email/1/inbox/create?sid=8276038&task=4&tt=6',
-    json: true
+    url: 'https://www.crazymailing.com/'
   }, function(err, res, data) {
-    if (data.inbox) success(util.emailToDomain(data.inbox));
-    else error(err, data);
+    try {
+    var $ = cheerio.load(res.body);
+    var email = $('#email_addr').text();
+    var domain = util.emailToDomain(email);
+    success(domain);
+    } catch(e) {
+      error(e, res.body);
+    }
   });
 }
 
@@ -23,3 +30,4 @@ function run() {
   });
 }
 run();
+

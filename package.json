@@ -3,5 +3,8 @@
   "version": "1.0.6",
   "repository": "https://github.com/ivolo/disposable-email-domains.git",
   "license": "MIT",
-  "main": "./index.json"
+  "main": "./index.json",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
 }

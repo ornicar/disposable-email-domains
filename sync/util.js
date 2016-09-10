@@ -4,5 +4,8 @@ module.exports = {
       var regex = new RegExp('(.+\\..|)' + r.replace('.', '\\.'));
       return regex.test(domain);
     });
+  },
+  emailToDomain: function(email) {
+    return email.replace(/.+\@(.+)$/, '$1');
   }
 };
