@@ -2,20 +2,21 @@ var fs = require('fs');
 var safeDomains = require('./safeDomains');
 var util = require('./util');
 
-var file = '../index.json';
+var file = '../list';
 
 function withDomains(f) {
   return fs.readFile(file, 'utf8', function(err, text) {
-    f(JSON.parse(text));
+    f(text.split('\n'));
   });
 }
 
 function writeDomains(domains, f) {
   domains.sort();
-  fs.writeFile(file, JSON.stringify(domains, null, 2), f);
+  fs.writeFile(file, domains.join('\n'), f);
 }
 
 module.exports = {
+  withDomains: withDomains,
   add: function(domain) {
     if (safeDomains.contains(domain)) {
       console.log('Tried to block ' + domain);
