@@ -1,0 +1,7 @@
+{
+  "name": "counter",
+  "dependencies": {
+    "requests": "^0.1.7",
+    "cheerio": "^0.22.0"
+  }
+}
