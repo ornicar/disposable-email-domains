@@ -4,8 +4,7 @@
 0815.su
 0clickemail.com
 0sg.net
-0wnd.net
-0wnd.org
+0wnd.\w+
 10mail.org
 10minutenemail.de
 123-m.com
@@ -244,7 +243,6 @@ d.dockl.com
 d.drevo.si
 d.ind.st
 d.pics.mu
-d.rabin.ca
 dab.ro
 dacoolest.com
 daintly.com
@@ -907,7 +905,6 @@ n.it4e.co
 n.kiani.com
 n.nfsi.ru
 n.nimaai.com
-n.rabin.ca
 national.shitposting.agency
 neomailbox.com
 nepwk.com
@@ -1051,6 +1048,7 @@ qv7.info
 r.ctos.ch
 r.nctt.us
 r.rulfer.com
+rabin.ca
 radiku.ye.vc
 ralib.com
 raubtierbaendiger.de
