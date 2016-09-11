@@ -23,17 +23,17 @@ module.exports = {
   addDomain: function(domain, f) {
     if (safeDomains.contains(domain)) {
       console.log('Tried to block ' + domain);
-      return f();
+      return f && f();
     }
     withDomains(function(domains) {
       if (util.domainExistsIn(domain, domains)) {
         console.log('Already blocked: ' + domain);
-        return f();
+        return f && f();
       }
       domains.push(domain);
       writeDomains(domains, function() {
         console.log('Added ' + domain);
-        f();
+        f && f();
       });
     });
   }

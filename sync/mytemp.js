@@ -14,7 +14,7 @@ function fetchDomain(success, error) {
 
 function run() {
   fetchDomain(function(domain) {
-    storage.add(domain);
+    storage.addDomain(domain);
     setTimeout(run, 20 * 1000);
   }, function(err, data) {
     console.log(err, data);
