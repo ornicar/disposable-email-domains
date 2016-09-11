@@ -1,5 +1,6 @@
 var HttpClient = require('request');
 var storage = require('./storage');
+var util = require('./util');
 
 var ivoloUrl = 'https://raw.githubusercontent.com/ivolo/disposable-email-domains/master/index.json';
 
@@ -12,15 +13,18 @@ HttpClient.get({
   });
 });
 
-function findNew(orig, dest) {
-  var found = [];
-  orig.forEach(function(o) {
-    if (!dest.some(function(r) {
-      var regex = new RegExp('(.+\\..|)' + r.replace('.', '\\.'));
-      return regex.test(o);
-    })) {
-      console.log('Add ' + o);
-      storage.add(o);
-    }
+function add(domains) {
+  if (!domains.length) return;
+  storage.addDomain(domains[0], function() {
+    add(domains.slice(1));
   });
+}
+
+function findNew(orig, domains) {
+  var found = [];
+  orig.forEach(function(domain) {
+    if (!util.domainExistsIn(domain, domains)) found.push(domain);
+  });
+  console.log('Found ' + found.join(', '));
+  add(found);
 }

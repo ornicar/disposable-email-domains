@@ -313,7 +313,7 @@ domforfb\d+.tk
 domozmail.com
 donemail.ru
 dontreg.com
-dontsentmespam.\w+
+dontsen(d|t)mespam.\w+
 dotmsg.com
 download-privat.de
 dp76.com
@@ -1526,4 +1526,4 @@ zomg.info
 zweb.in
 zxcv.com
 zxcvbnm.com
-zzz.co
+zzz.com

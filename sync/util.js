@@ -1,8 +1,12 @@
+function lineToRegex(line) {
+  return new RegExp('(.+\\.)?' + line.replace('.', '\\.'));
+}
+
 module.exports = {
+  lineToRegex: lineToRegex,
   domainExistsIn: function(domain, domains) {
-    return domains.some(function(r) {
-      var regex = new RegExp('(.+\\..|)' + r.replace('.', '\\.'));
-      return regex.test(domain);
+    return domains.some(function(line) {
+      return lineToRegex(line).test(domain);
     });
   },
   emailToDomain: function(email) {
