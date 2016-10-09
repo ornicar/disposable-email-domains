@@ -1,30 +1,39 @@
-var HttpClient = require('request');
+var HttpClient = require('request-promise');
 var storage = require('./storage');
 var util = require('./util');
 
 var ivoloUrl = 'https://raw.githubusercontent.com/ivolo/disposable-email-domains/master/index.json';
+// var wesbosUrl = 'https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt';
 
-HttpClient.get({
+fetch({
   url: ivoloUrl,
   json: true
-}, function(err, res, ivolo) {
-  storage.withDomains(function(domains) {
-    findNew(ivolo, domains);
-  });
 });
 
-function add(domains) {
-  if (!domains.length) return;
-  storage.addDomain(domains[0], function() {
-    add(domains.slice(1));
+function fetch(opts) {
+  console.log(opts.url);
+  return Promise.all([
+    storage.getDomains(),
+    HttpClient.get(opts)
+  ]).then(function(rs) {
+    var newDomains = findNew(rs[0], rs[1]);
+    console.log('Found ' + newDomains.join(', '));
+    return Promise.resolve();
+    // return add(newDomains);
   });
 }
 
-function findNew(orig, domains) {
+function findNew(currents, candidates) {
   var found = [];
-  orig.forEach(function(domain) {
-    if (!util.domainExistsIn(domain, domains)) found.push(domain);
+  candidates.forEach(function(domain) {
+    if (!util.domainExistsIn(domain, currents)) found.push(domain);
   });
-  console.log('Found ' + found.join(', '));
-  add(found);
+  return found;
+}
+
+function add(domains) {
+  if (!domains.length) return Promise.resolve();
+  return storage.addDomain(domains[0]).then(function() {
+    return add(domains.slice(1));
+  });
 }

@@ -1,39 +1,39 @@
-var fs = require('fs');
+var fsp = require('fs-promise');
 var safeDomains = require('./safeDomains');
 var util = require('./util');
 
 var file = '../list';
 
-function withDomains(f) {
-  return fs.readFile(file, 'utf8', function(err, text) {
-    var domains = text.split('\n').filter(function(l) {
+function getDomains() {
+  return fsp.readFile(file, {
+    encoding: 'utf8'
+  }).then(function(text) {
+    return text.split('\n').filter(function(l) {
       return !!l;
-    })
-    f(domains);
+    });
   });
 }
 
-function writeDomains(domains, f) {
+function writeDomains(domains) {
   domains.sort();
-  fs.writeFile(file, domains.join('\n') + '\n', f);
+  return fsp.writeFile(file, domains.join('\n') + '\n');
 }
 
 module.exports = {
-  withDomains: withDomains,
-  addDomain: function(domain, f) {
+  getDomains: getDomains,
+  addDomain: function(domain) {
     if (safeDomains.contains(domain)) {
       console.log('Tried to block ' + domain);
-      return f && f();
+      return Promise.resolve();
     }
-    withDomains(function(domains) {
+    return getDomains().then(function(domains) {
       if (util.domainExistsIn(domain, domains)) {
         console.log('Already blocked: ' + domain);
-        return f && f();
+        return Promise.resolve();
       }
       domains.push(domain);
-      writeDomains(domains, function() {
+      return writeDomains(domains).then(function() {
         console.log('Added ' + domain);
-        f && f();
       });
     });
   }
