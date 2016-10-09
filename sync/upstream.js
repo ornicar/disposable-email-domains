@@ -4,10 +4,18 @@ var util = require('./util');
 
 var ivoloUrl = 'https://raw.githubusercontent.com/ivolo/disposable-email-domains/master/index.json';
 // var wesbosUrl = 'https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt';
+var andreisUrl = 'https://raw.githubusercontent.com/andreis/disposable/master/domains.txt';
 
 fetch({
   url: ivoloUrl,
   json: true
+}).then(function() {
+  fetch({
+    url: andreisUrl,
+    transform: function(txt) {
+      return txt.split('\n');
+    }
+  });
 });
 
 function fetch(opts) {
@@ -18,8 +26,7 @@ function fetch(opts) {
   ]).then(function(rs) {
     var newDomains = findNew(rs[0], rs[1]);
     console.log('Found ' + newDomains.join(', '));
-    return Promise.resolve();
-    // return add(newDomains);
+    return add(newDomains);
   });
 }
 
