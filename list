@@ -6,7 +6,7 @@
 0sg.net
 0wnd.\w+
 10mail.org
-10minutenemail.de
+\d+minute\w+.\w+
 10x.es
 120v.ac
 123-m.com
