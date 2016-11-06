@@ -6,7 +6,6 @@
 0sg.net
 0wnd.\w+
 10mail.org
-\d+minute-?\w+.\w+
 10x.es
 120v.ac
 123-m.com
@@ -50,6 +49,7 @@ TempEmail.net
 \d+(minute|hour)s?mail.\w+
 \d+e?mail.\w+
 \d+hosting.\w+
+\d+minute-?\w+.\w+
 a-bc.net
 a45.in
 aaathats3as.com
@@ -586,6 +586,7 @@ herr-der-mails.de
 hi5.si
 hidemail.de
 hidzz.com
+highmails.com
 hitler.rocks
 hmail.us
 hmamail.com
