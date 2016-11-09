@@ -49,6 +49,7 @@ TempEmail.net
 \d+(minute|hour)s?mail.\w+
 \d+e?mail.\w+
 \d+hosting.\w+
+\d+minut\w+.\w+
 \d+minute-?\w+.\w+
 a-bc.net
 a45.in
