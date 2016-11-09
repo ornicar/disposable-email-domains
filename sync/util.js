@@ -1,5 +1,5 @@
 function lineToRegex(line) {
-  return new RegExp('(.+\\.)?' + line.replace('.', '\\.'));
+  return new RegExp('(.+\\.)?' + line.replace('.', '\\.'), 'i');
 }
 
 module.exports = {
