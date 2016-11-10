@@ -1257,7 +1257,7 @@ soodomail.com
 soodonims.com
 soon.it
 spainmail.com
-spam\w*.\w+
+spam[-\w]*.\w+
 speed.1s.fr
 sperke.net
 sperma.cf
