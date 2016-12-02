@@ -320,7 +320,7 @@ digital-filestore.de
 digitalsanctuary.com
 dingbone.com
 directbox.com
-discar(d|t)e?(mail)?.\w+
+discar(d|t)-?e?(mail)?.\w+
 disign-concept.eu
 disign-revelation.com
 dispomail.eu
@@ -1308,7 +1308,7 @@ soodomail.com
 soodonims.com
 soon.it
 spainmail.com
-spam[-\w]*.\w+
+spam\w*.\w+
 speed.1s.fr
 sperke.net
 sperma.cf
