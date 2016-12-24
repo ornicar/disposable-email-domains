@@ -102,10 +102,8 @@ ano-mail.net
 anonbox.net
 anonym\w+.\w+
 anotherdomaincyka.tk
-antichef.com
-antichef.net
-antispam.de
-antispam24.de
+antichef.\w+
+antispam\w*.\w+
 antonelli.usa.cc
 anywhere.pw
 appixie.com
@@ -176,7 +174,6 @@ bodhi.lawlita.com
 bofthew.com
 bonbon.net
 bongobongo.\w+
-bongobongo.\w+.\w+
 bootybay.de
 borcz.com
 bot.nu
