@@ -964,6 +964,7 @@ ms9.mailslite.com
 msa.minsmail.com
 msgos.com
 msh.mailslite.com
+msrc.ml
 mswork.ru
 mt20\d+.com
 muehlacker.tk
@@ -978,8 +979,7 @@ myadult.info
 mycleaninbox.net
 myemailboxy.com
 mymail-in.net
-mymailjos.cf
-mymailjos.ga
+mymailjos.\w+
 mymailoasis.com
 mymailto.cf
 mymailto.ga
