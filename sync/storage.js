@@ -19,22 +19,31 @@ function writeDomains(domains) {
   return fsp.writeFile(file, domains.join('\n') + '\n');
 }
 
-module.exports = {
-  getDomains: getDomains,
-  addDomain: function(domain) {
-    if (safeDomains.contains(domain)) {
-      console.log('Tried to block ' + domain);
+function addDomain(domain) {
+  if (safeDomains.contains(domain)) {
+    console.log('Tried to block ' + domain);
+    return Promise.resolve();
+  }
+  return getDomains().then(function(domains) {
+    if (util.domainExistsIn(domain, domains)) {
+      console.log('Already blocked: ' + domain);
       return Promise.resolve();
     }
-    return getDomains().then(function(domains) {
-      if (util.domainExistsIn(domain, domains)) {
-        console.log('Already blocked: ' + domain);
-        return Promise.resolve();
-      }
-      domains.push(domain);
-      return writeDomains(domains).then(function() {
-        console.log('Added ' + domain);
-      });
+    domains.push(domain);
+    return writeDomains(domains).then(function() {
+      console.log('Added ' + domain);
     });
+  });
+}
+
+module.exports = {
+  getDomains: getDomains,
+  addDomain: addDomain,
+  addDomains: function(domains) {
+    domains.reduce(function(p, domain) {
+      return p.then(function() {
+        return addDomain(domain);
+      });
+    }, Promise.resolve());
   }
 };
