@@ -1,13 +1,14 @@
 function lineToRegex(line) {
   line = line.replace('\\w', '[\\w-]');
   line = line.replace('.', '\\.');
-  return new RegExp('(.+\\.)?' + line, 'i');
+  return new RegExp('^(.+\\.)?' + line, 'i');
 }
 
 module.exports = {
   lineToRegex: lineToRegex,
   domainExistsIn: function(domain, domains) {
     return domains.some(function(line) {
+      // if (lineToRegex(line).test(domain)) console.log(line, lineToRegex(line), domain);
       return lineToRegex(line).test(domain);
     });
   },
