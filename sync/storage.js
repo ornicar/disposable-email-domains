@@ -20,7 +20,7 @@ function writeDomains(domains) {
 }
 
 function addDomain(domain) {
-  if (safeDomains.contains(domain)) {
+  if (domain.length < 5 || !domain.indexOf('.') || safeDomains.contains(domain)) {
     console.log('Tried to block ' + domain);
     return Promise.resolve();
   }
