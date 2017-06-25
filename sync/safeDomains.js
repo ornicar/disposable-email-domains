@@ -43,7 +43,7 @@ var domains = [
   "yahoo.com.br", "hotmail.com.br", "outlook.com.br", "uol.com.br", "bol.com.br", "terra.com.br", "ig.com.br", "itelefonica.com.br", "r7.com", "zipmail.com.br", "globo.com", "globomail.com", "oi.com.br",
 
   /* meh */
-  "poczta.onet.pl"
+  "poczta.onet.pl", "ukr.net"
 ];
 
 module.exports = {
