@@ -5,6 +5,7 @@
     "fs-promise": "^0.5.0",
     "promise": "^7.1.1",
     "request-promise": "^4.1.1",
-    "requests": "^0.1.7"
+    "requests": "^0.1.7",
+    "split": "^1.0.1"
   }
 }
