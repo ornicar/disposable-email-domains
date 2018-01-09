@@ -4,7 +4,7 @@ var util = require('./util');
 
 var ivoloUrl = 'https://raw.githubusercontent.com/ivolo/disposable-email-domains/master/index.json';
 // var wesbosUrl = 'https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt';
-var andreisUrl = 'https://raw.githubusercontent.com/andreis/disposable/master/domains.txt';
+var andreisUrl = 'https://raw.githubusercontent.com/andreis/disposable-email-domains/master/domains.txt';
 
 fetch({
   url: ivoloUrl,
