@@ -24,8 +24,9 @@ function fetch(opts) {
     storage.getDomains(),
     HttpClient.get(opts)
   ]).then(function(rs) {
+    console.log(rs[1].length + ' domains');
     var newDomains = findNew(rs[0], rs[1]);
-    console.log('Found ' + newDomains.join(', '));
+    console.log('Found ' + newDomains.length + ' new');
     return add(newDomains);
   });
 }
