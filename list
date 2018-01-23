@@ -1,12 +1,5 @@
 0-mail.com
-0039.\w+
-02466.cf
-027168.com
-07819.cf
-0815.ru
-0815.ry
-0815.su
-0845.ru
+\d+.\w+
 0\w.ro
 0box.eu
 0clickemail.com
@@ -130,6 +123,8 @@
 60-minuten-mail.de
 672643.net
 67832.cf
+67832.ga
+67832.ml
 69-ew.tk
 69postix.info
 6brmwv.\w+
@@ -2365,7 +2360,7 @@ lee.mx
 leeching.net
 leemail.me
 legalrc.loan
-lehman.gq
+lehman.\w+
 lei.kr
 lellno.gq
 lenovog4.com
@@ -2466,6 +2461,7 @@ lukecarriere.com
 lukemail.info
 lukop.dk
 luo.kr
+lupabapak.org
 luv2.us
 luxa.esy.es
 lyfestylecreditsolutions.com
@@ -2575,6 +2571,7 @@ mailgutter.com
 mailhazard.\w+
 mailhero.io
 mailhz.me
+mailimails.patzleiner.net
 mailimate.com
 mailin8r.com
 mailinat(a|e|o)r\d*.\w+
@@ -3011,6 +3008,7 @@ norih.com
 norseforce.com
 northemquest.com
 nosh.ml
+nospam.thurstons.us
 nospam.wins.com.br
 nospam.ze.tc
 nospam4.us
@@ -3248,6 +3246,7 @@ pokemail.net
 pokiemobile.com
 polacy-dungannon.tk
 polarkingxx.ml
+polimi.ml
 politikerclub.de
 poliusraas.tk
 polizisten-duzer.de
@@ -3917,6 +3916,7 @@ szucsati.net
 t.psh.me
 t.tedo5.com
 t.vxe6.net
+t099.tk
 t24e4p7.com
 t3t97d1d.com
 tafmail.com
