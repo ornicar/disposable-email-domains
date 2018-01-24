@@ -1,5 +1,4 @@
 0-mail.com
-\d+.\w+
 0\w.ro
 0box.eu
 0clickemail.com
@@ -163,6 +162,7 @@ MailScrap.com
 SmellFear.com
 TempEmail.net
 \d+(minute|hour)s?mail.\w+
+\d+.\w+
 \d+e?mail.\w+
 \d+hosting.\w+
 \d+minut\w+.\w+
@@ -1672,6 +1672,7 @@ glassaas.site
 glassworks.cf
 gleeze.com
 glitch.sx
+global.idn.vn
 globaltouron.com
 glubex.com
 glucosegrin.com
@@ -2809,6 +2810,7 @@ msgden.com
 msgos.com
 msgsafe.ninja
 msk.ru
+mskey.co
 mspeciosa.com
 msrc.ml
 mswork.ru
