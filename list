@@ -3086,6 +3086,7 @@ oe1f42q.com
 oepia.com
 oerpub.org
 office-dateien.de
+office.ms365.ml
 offshore-proxies.net
 ohaaa.de
 ohdomain.xyz
@@ -4208,7 +4209,7 @@ urfunktion.se
 uroid.com
 us.af
 us.to
-usa-gov.ga
+usa-gov.\w+
 usa.cc
 usachan.\w+
 uscaves.com
@@ -4282,6 +4283,7 @@ vinernet.com
 violates.me
 vip-mail.ml
 vip-mail.tk
+vip.cool
 vipepe.com
 vipmail.name
 vipmail.pw
