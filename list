@@ -443,7 +443,7 @@ asdfghmail.com
 asdfmail.net
 asdhgsad.com
 asfdasd.com
-asgaccse-pt.cf
+asgaccse-pt.\w+
 asgardia-space.tk
 ashik2in.com
 ashleyandrew.com
@@ -469,8 +469,7 @@ athens5.com
 atob.ws
 atvclub.msk.ru
 aubior.fr
-audi-r8.gq
-audi-r8.tk
+audi-r8.\w+
 augmentationtechnology.com
 aus.schwarzmail.ga
 ausgefallen.info
@@ -495,6 +494,7 @@ azazazatashkent.tk
 azcomputerworks.com
 azjuggalos.com
 azmeil.tk
+azote.\w+
 b.reed.to
 b.royal-syrup.tk
 b1of96u.com
@@ -1584,6 +1584,7 @@ futuregood.pw
 fuw65d.\w+
 fuwamofu.com
 fux0ringduh.com
+fw-nietzsche.tk
 fw2.me
 fw6m0bd.com
 fxnxs.com
@@ -1991,6 +1992,7 @@ imhtcut.xyz
 immo-gerance.info
 imovie.link
 impastore.co
+imperfectron.com
 impostore.co
 imstations.com
 imul.info
@@ -2096,8 +2098,7 @@ iwantumake.us
 iwi.net
 ixx.io
 izmail.net
-j-keats.cf
-j-keats.ga
+j-keats.\w+
 j-p.us
 j.javaa.com
 j.jobical.com
@@ -2112,6 +2113,7 @@ jajxz.com
 jamit.com.au
 jancokancene.\w+
 janproz.com
+javmail.tech
 jcdmail.men
 jcho.com
 jcpclothing.ga
@@ -2715,6 +2717,7 @@ mfsa.info
 mfsa.ru
 mhwolf.net
 miaferrari.com
+miam.kd2.org
 miansije.gq
 micsocks.net
 micu.eu
@@ -2746,6 +2749,7 @@ minsmail.com
 mintconditionin.ga
 mintemail.com
 miodonski.ch
+mipodon.ga
 miraigames.net
 mirmirchi.site
 mirrorrr.asia
@@ -2753,6 +2757,7 @@ mirrror.asia
 misterpinball.de
 miswebreg.\w+
 mituvn.com
+miur.\w+
 mixhd.xyz
 mixi.gq
 mji.ro
@@ -2807,6 +2812,7 @@ moza.pl
 mozej.com
 mp-j.\w+
 mp3geulis.net
+mpaaf.tk
 mr24.co
 mrblacklist.gq
 mrchinh.com
@@ -2828,6 +2834,7 @@ muchomail.com
 mucincanon.com
 muehlacker.tk
 muell.email
+muellpost.de
 mufmail.com
 mufux.com
 mugglenet.org
@@ -2863,8 +2870,7 @@ myde.ml
 mydemo.equipment
 myecho.es
 myemailboxy.com
-myfake.tk
-myfakemail.tk
+myfake\w*.\w+
 myindohome.services
 myinterserver.ml
 mykickassideas.com
@@ -2912,6 +2918,7 @@ nada.email
 nada.ltd
 nafko.cf
 nakedtruth.biz
+nameaaa.myddns.rocks
 namefake.com
 namesheep.\w+
 namilu.com
@@ -3000,8 +3007,7 @@ nodie.cc
 nodnor.club
 nogmailspam.info
 noicd.com
-nokiamail.com
-nolemail.ga
+nokiamail.\w+
 nom.za
 nomail.\w+
 nomail2me.com
@@ -3478,6 +3484,7 @@ redchan.it
 reddit.usa.cc
 reddithub.com
 redfeathercrow.com
+redmail.tech
 redpeanut.com
 redpen.trade
 reftoken.net
@@ -3546,8 +3553,7 @@ roys.ml
 rppkn.com
 rq1.in
 rq6668f.com
-rr-group.ml
-rr-group.tk
+rr-group.\w+
 rrwbltw.xyz
 rs311e8.com
 rtotlmail.net
@@ -3622,6 +3628,8 @@ sdf.org
 sdfghyj.tk
 sdnr.it
 searzh.com
+seasideorient.com
+secmail.ga
 secmail.ml
 secmail.pw
 secret-area.tk
@@ -3763,6 +3771,7 @@ smtp99.com
 smuse.me
 smwg.info
 snakemail.com
+snam.gq
 snapwet.com
 sneakemail.com
 sneakerbunko.\w+
@@ -3886,8 +3895,7 @@ stuff.munrohk.com
 stuffmail.de
 stumpfwerk.com
 styliste.pro
-subaru-wrx.ga
-subaru-xv.ml
+subaru-\w+.\w+
 subpastore.co
 suburbanthug.com
 successforu.pw
@@ -3984,7 +3992,9 @@ teleworm.us
 tellos.xyz
 temp.\w+.\w+
 temp\w+.\w+
+tenesu.tk
 terima-email.ga
+terminate.tech
 terminverpennt.de
 ternaklele.ga
 test.com
@@ -4305,7 +4315,7 @@ vipxm.net
 viralhits.org
 viralplays.com
 virgilio.ga
-virgiliomail.gq
+virgiliomail.\w+
 visa.coms.hk
 visal\d+.\w+
 vistomail.com
@@ -4314,6 +4324,7 @@ vivazoutlet.com.br
 vixletdev.com
 vkcode.ru
 vmail.me
+vmail.tech
 vmailing.info
 vmani.com
 vmany.com
@@ -4349,10 +4360,7 @@ vubby.com
 vuiy.pw
 vuzimir.cf
 vvx046q.com
-vw-audi.ml
-vw-golf.gq
-vw-seat.ml
-vw-skoda.ml
+vw-\w+.\w+
 vzlom4ik.tk
 vztc.com
 w.0w.ro
@@ -4500,6 +4508,7 @@ wupics.com
 wuzup.net
 wuzupmail.net
 wvl238skmf.com
+bccto.com
 wwwhost.biz
 wwwnew.eu
 wxnw.net
